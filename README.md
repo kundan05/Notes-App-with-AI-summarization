@@ -1,4 +1,6 @@
 # AI Notes App
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ea3ef21b-68a4-43c8-a545-b11ea2ba93de" />
+
 
 A premium, modern note-taking application featuring AI-powered summarization, built with the MERN stack (MongoDB, Express, React, Node.js).
 
