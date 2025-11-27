@@ -5,7 +5,7 @@ A premium, modern note-taking application featuring **AI-powered summarization**
 <img width="1765" height="937" alt="Screenshot from 2025-11-27 13-53-14" src="https://github.com/user-attachments/assets/65116a16-a4c4-419d-bf86-9b696257cb0f" />
 
 
-🚀 **Live Demo:** [https://notes-app-with-ai-summarization.onrender.com](https://notes-app-with-ai-summarization.onrender.com)
+🚀 **Live Demo:** [https://notes-app-with-ai-summarization-1.onrender.com](https://notes-app-with-ai-summarization-1.onrender.com)
 
 ---
 
@@ -34,7 +34,6 @@ A premium, modern note-taking application featuring **AI-powered summarization**
 -   **MongoDB**: NoSQL Database
 -   **Mongoose**: ODM for MongoDB
 -   **JWT (JSON Web Tokens)**: Authentication
--   **BcryptJS**: Password hashing
 -   **Google Generative AI**: AI Summarization (Gemini Model)
 
 ---
@@ -46,7 +45,7 @@ Follow these steps to set up the project locally on your machine.
 ### Prerequisites
 
 -   **Node.js** (v14 or higher)
--   **npm** or **yarn**
+-   **npm** 
 -   **MongoDB** (Local or Atlas connection string)
 -   **Google Gemini API Key** (Get it from [Google AI Studio](https://aistudio.google.com/))
 
