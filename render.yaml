@@ -17,12 +17,12 @@ services:
         value: 10000
 
   # Static Site for the React Client
-  - type: static_site          # <- was `static`
+  - type: web               # ← Must stay `web`
     name: notes-app-client
-    env: static
-    rootDir: client            # <- was `root`
+    env: static             # ← Tells Render it’s a static site
+    rootDir: client
     buildCommand: npm install && npm run build
-    staticPublishPath: dist    # <- was `publishDir`
+    staticPublishPath: dist
     routes:
       - type: rewrite
         source: /*
@@ -32,4 +32,4 @@ services:
         fromService:
           type: web
           name: notes-app-server
-          property: url        # <- removed stray backslash
+          property: url
