@@ -34,4 +34,4 @@ services:
         fromService:
           type: web
           name: notes-app-server
-          property: url
+          property: host
