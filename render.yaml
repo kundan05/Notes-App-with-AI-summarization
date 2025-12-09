@@ -3,6 +3,7 @@ services:
   - type: web
     name: notes-app-server
     env: node
+    plan: free              # <- ADD THIS
     rootDir: server
     buildCommand: npm install
     startCommand: npm start
@@ -17,9 +18,10 @@ services:
         value: 10000
 
   # Static Site for the React Client
-  - type: web                 # static site via env: static
+  - type: web
     name: notes-app-client
     env: static
+    plan: free              # <- AND THIS
     rootDir: client
     buildCommand: npm install && npm run build
     staticPublishPath: dist
