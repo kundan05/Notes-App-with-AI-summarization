@@ -5,7 +5,7 @@ A premium, modern note-taking application featuring **AI-powered summarization**
 <img width="1765" height="937" alt="Screenshot from 2025-11-27 13-53-14" src="https://github.com/user-attachments/assets/65116a16-a4c4-419d-bf86-9b696257cb0f" />
 
 
-🚀 **Live Demo:** [https://notes-app-with-ai-summarization-1.onrender.com](https://notes-app-with-ai-summarization-1.onrender.com)
+🚀 **Live Demo:** [https://notes-app-with-ai-summarization.vercel.app/](https://notes-app-with-ai-summarization.vercel.app/)
 
 ---
 
