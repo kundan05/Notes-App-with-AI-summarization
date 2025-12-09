@@ -23,7 +23,4 @@ services:
     staticPublishPath: ./dist
     envVars:
       - key: VITE_API_URL
-        fromService:
-          type: web
-          name: notes-app-server
-          property: url
+        value: https://notes-app-server.onrender.com # Placeholder: Update this after server deployment if needed, or simply redeploy client.
