@@ -3,7 +3,7 @@ services:
   - type: web
     name: notes-app-server
     env: node
-    root: server
+    rootDir: server
     buildCommand: npm install
     startCommand: npm start
     envVars:
@@ -17,19 +17,19 @@ services:
         value: 10000
 
   # Static Site for the React Client
-  - type: static
+  - type: static_site          # <- was `static`
     name: notes-app-client
     env: static
-    root: client
+    rootDir: client            # <- was `root`
     buildCommand: npm install && npm run build
-    publishDir: dist
+    staticPublishPath: dist    # <- was `publishDir`
     routes:
       - type: rewrite
-        source: /**
+        source: /*
         destination: /index.html
     envVars:
       - key: VITE_API_URL
         fromService:
           type: web
           name: notes-app-server
-          property: url
+          property: url        # <- removed stray backslash
