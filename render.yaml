@@ -18,15 +18,16 @@ services:
         value: 10000
 
   # Static Site for the React Client
-  - type: static
+  - type: web
     name: notes-app-client
     env: static
-    root: client
+    plan: free
+    rootDir: client
     buildCommand: npm install && npm run build
-    publishDir: dist
+    staticPublishPath: dist
     routes:
       - type: rewrite
-        source: /**
+        source: /*
         destination: /index.html
     envVars:
       - key: VITE_API_URL
